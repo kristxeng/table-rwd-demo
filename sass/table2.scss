@@ -21,20 +21,32 @@ table {
 
 @media only screen 
 and (max-device-width : 480px) {
-tr {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 5px;
-  border: 1px solid $main-color;
-
-  *:not(:last-child) {
-    border-bottom: 1px solid $main-color;
+  thead {
+    display: none;
   }
-}
+
+  table {
+    border: none;
+  }
+
+  .thead_row{
+    background: $main-color;
+    margin-top: 5px;
+  }
+
+  tr {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid $main-color;
+
+    @at-root *:not(:last-child) {
+      border-bottom: 1px solid $main-color;
+    }
+  }
 
   th, td {
-    width: 50%;
     border: none;
-    padding: 10px;
+    width: 50%;
+    padding: 8px;
   }
 }

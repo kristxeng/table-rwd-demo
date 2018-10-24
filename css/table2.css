@@ -12,16 +12,20 @@ table {
     background: #EEE; }
 
 @media only screen and (max-device-width: 480px) {
+  thead {
+    display: none; }
+  table {
+    border: none; }
+  .thead_row {
+    background: #EEE;
+    margin-top: 5px; }
   tr {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    height: 120px;
-    margin-top: 5px;
     border: 1px solid #EEE; }
-    tr *:not(:nth-child(3)) {
+    *:not(:last-child) {
       border-bottom: 1px solid #EEE; }
   th, td {
-    width: 50%;
     border: none;
+    width: 50%;
     padding: 8px; } }

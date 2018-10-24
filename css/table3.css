@@ -18,7 +18,7 @@ table {
     border: none; }
   tr {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     border: 1px solid #EEE; }
     tr + tr {
       margin-top: 5px; }
@@ -26,11 +26,10 @@ table {
       border-bottom: 1px solid #EEE; }
   td {
     display: flex;
-    justify-content: space-around;
-    width: 100%;
     border: none; }
     td:before {
-      display: block; }
+      text-align: left;
+      min-width: 36%; }
     td:nth-child(1)::before {
       content: "test1"; }
     td:nth-child(2)::before {

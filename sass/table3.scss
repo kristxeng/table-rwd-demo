@@ -1,3 +1,5 @@
+$main-color: #EEE;
+
 * {
   box-sizing: border-box;
 }
@@ -6,14 +8,14 @@ table {
   width: 100%;
 
   @at-root &, th, td {
-    border: 1px solid #EEE;
+    border: 1px solid $main-color;
     border-collapse: collapse;
     text-align: center;
     padding: 16px;
   }
 
   thead {
-    background: #EEE;
+    background: $main-color;
   }
 }
 
@@ -29,35 +31,34 @@ and (max-device-width : 480px) {
 
   tr {
     display: flex;
-    flex-wrap: wrap;
-    border: 1px solid #EEE;
+    flex-direction: column;
+    border: 1px solid $main-color;
 
     @at-root & + & {
       margin-top: 5px;;
     }
 
     @at-root *:not(:last-child) {
-      border-bottom: 1px solid #EEE;
+      border-bottom: 1px solid $main-color;
     }
   }
 
-  $titles: (
-    1: 'test1',
-    2: 'test2',
-    3: 'test3',
-    4: 'test4',
-    5: 'test5'
-  );
-
   td {
     display: flex;
-    justify-content: space-around;
-    width: 100%;
     border: none;
 
     &:before {
-      display: block;
+      text-align: left;
+      min-width: 36%;
     }
+
+    $titles: (
+      1: 'test1',
+      2: 'test2',
+      3: 'test3',
+      4: 'test4',
+      5: 'test5'
+    );
 
     @for $i from 1 through 5 {
       &:nth-child( #{$i} )::before {
