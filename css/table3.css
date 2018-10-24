@@ -22,7 +22,7 @@ table {
     border: 1px solid #EEE; }
     tr + tr {
       margin-top: 5px; }
-    *:not(:last-child) {
+    tr *:not(:last-child) {
       border-bottom: 1px solid #EEE; }
   td {
     display: flex;

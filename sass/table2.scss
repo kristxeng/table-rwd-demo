@@ -39,7 +39,7 @@ and (max-device-width : 480px) {
     flex-wrap: wrap;
     border: 1px solid $main-color;
 
-    @at-root *:not(:last-child) {
+    *:not(:last-child) {
       border-bottom: 1px solid $main-color;
     }
   }

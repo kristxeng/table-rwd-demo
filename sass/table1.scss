@@ -29,42 +29,25 @@ and (max-device-width : 480px) {
     border: none;
   }
 
+  .thead_row{
+    background: $main-color;
+    margin-top: 5px;
+  }
+
   tr {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     border: 1px solid $main-color;
+    height: 120px;
 
-    @at-root & + & {
-      margin-top: 5px;;
-    }
-
-    *:not(:last-child) {
+    *:not(:nth-child(3)) {
       border-bottom: 1px solid $main-color;
     }
   }
 
-  td {
-    display: flex;
+  th, td {
     border: none;
-
-    &:before {
-      text-align: left;
-      min-width: 36%;
-    }
-
-    $titles: (
-      1: 'test1',
-      2: 'test2',
-      3: 'test3',
-      4: 'test4',
-      5: 'test5'
-    );
-
-    @for $i from 1 through 5 {
-      &:nth-child( #{$i} )::before {
-        content: map-get($titles, $i);
-      }
-    }
-
+    padding: 8px;
   }
 }

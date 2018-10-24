@@ -22,10 +22,11 @@ table {
   tr {
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid #EEE; }
-    tr *:not(:last-child) {
+    flex-direction: column;
+    border: 1px solid #EEE;
+    height: 120px; }
+    tr *:not(:nth-child(3)) {
       border-bottom: 1px solid #EEE; }
   th, td {
     border: none;
-    width: 50%;
     padding: 8px; } }
