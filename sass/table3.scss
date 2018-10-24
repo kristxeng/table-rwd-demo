@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+
+  @at-root &, th, td {
+    border: 1px solid #EEE;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 16px;
+  }
+
+  thead {
+    background: #EEE;
+  }
+}
+
+@media only screen 
+and (max-device-width : 480px) {
+  thead {
+    display: none;
+  }
+
+  table {
+    border: none;
+  }
+
+  tr {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #EEE;
+
+    @at-root & + & {
+      margin-top: 5px;;
+    }
+
+    @at-root *:not(:last-child) {
+      border-bottom: 1px solid #EEE;
+    }
+  }
+
+  $titles: (
+    1: 'test1',
+    2: 'test2',
+    3: 'test3',
+    4: 'test4',
+    5: 'test5'
+  );
+
+  td {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    border: none;
+
+    &:before {
+      display: block;
+    }
+
+    @for $i from 1 through 5 {
+      &:nth-child( #{$i} )::before {
+        content: map-get($titles, $i);
+      }
+    }
+
+  }
+}

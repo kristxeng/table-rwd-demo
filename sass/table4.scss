@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+
+  @at-root &, th, td {
+    border: 1px solid #EEE;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 16px;
+  }
+
+  thead {
+    background: #EEE;
+  }
+}
+
+@media only screen 
+and (max-device-width : 480px) {
+tr {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+  border: 1px solid #EEE;
+
+  *:not(:last-child) {
+    border-bottom: 1px solid #EEE;
+  }
+}
+
+  th, td {
+    display: block;
+    width: 50%;
+    border: none;
+    padding: 10px;
+  }
+}
