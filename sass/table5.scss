@@ -17,12 +17,13 @@ table {
   thead {
     background: $main-color;
   }
-
 }
-
 
 @media only screen 
 and (max-device-width : 480px) {
+table {
+  border: none;
+}
 tr {
   display: flex;
   flex-wrap: wrap;
