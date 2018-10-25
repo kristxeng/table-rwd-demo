@@ -24,11 +24,11 @@ th, td {
 }
 
 .table {
-  &_container {
-    height: 96vh;
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
+  // &_container {
+  //   height: 96vh;
+  //   overflow-y: auto;
+  //   overflow-x: hidden;
+  // }
 
   &_head {
     position: sticky;

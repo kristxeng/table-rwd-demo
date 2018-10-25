@@ -15,11 +15,6 @@ thead {
 th, td {
   width: 20%; }
 
-.table_container {
-  height: 96vh;
-  overflow-y: auto;
-  overflow-x: hidden; }
-
 .table_head {
   position: sticky;
   top: 0; }
