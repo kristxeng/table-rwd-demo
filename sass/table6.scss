@@ -1,0 +1,61 @@
+$main-color: #EEE;
+
+* {
+  box-sizing: border-box;
+}
+
+table {
+  width: 96vw;
+
+  @at-root &, th, td {
+    border: 1px solid $main-color;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 16px;
+  }
+}
+
+thead {
+  background: $main-color;
+}
+
+th, td {
+  width: 20%;
+}
+
+.table {
+  &_container {
+    height: 80vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  &_head {
+    position: sticky;
+    top: 0;
+  }
+}
+
+@media only screen 
+and (max-width : 480px) {
+  table {
+    border: none;
+  }
+
+  tr {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    border: 1px solid $main-color;
+
+    *:not(:last-child) {
+      border-bottom: 1px solid $main-color;
+    }
+  }
+
+  th, td {
+    width: 50%;
+    border: none;
+    padding: 10px;
+  }
+}
