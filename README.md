@@ -23,3 +23,6 @@ table4 [線上範例](https://kristxeng.github.io/table-rwd-demo/table4.html)
 
 table5 [線上範例](https://kristxeng.github.io/table-rwd-demo/table5.html)  
 ![](https://i.imgur.com/x5HRO76.png)
+
+table6: rwd table with sticky title [線上範例](https://kristxeng.github.io/table-rwd-demo/table6.html)  
+![](https://github.com/kristxeng/table-rwd-demo/blob/master/table-with-sticky-title.gif)
