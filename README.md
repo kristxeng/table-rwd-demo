@@ -9,20 +9,20 @@ scss 存檔檔案自動編譯
 可在 http://localhost:3333/ 中找到 RWD Table 的各個 Demo  
 
 table1 [線上範例](https://kristxeng.github.io/table-rwd-demo/table1.html)  
-![](https://i.imgur.com/eDmmQqT.png)  
+<img src="https://i.imgur.com/eDmmQqT.png" width="300px" />  
 
 
 table2 [線上範例](https://kristxeng.github.io/table-rwd-demo/table2.html)  
-![](https://i.imgur.com/vywkSRD.png)
+<img src="https://i.imgur.com/vywkSRD.png" width="300px" />  
 
 table3 [線上範例](https://kristxeng.github.io/table-rwd-demo/table3.html)  
-![](https://i.imgur.com/P97OuAB.png)
+<img src="https://i.imgur.com/P97OuAB.png" width="300px" />  
 
 table4 [線上範例](https://kristxeng.github.io/table-rwd-demo/table4.html)  
- ![](https://i.imgur.com/zVuJZpG.png)
+<img src="https://i.imgur.com/zVuJZpG.png" width="300px" />  
 
 table5 [線上範例](https://kristxeng.github.io/table-rwd-demo/table5.html)  
-![](https://i.imgur.com/x5HRO76.png)
+<img src="https://i.imgur.com/x5HRO76.png" width="300px" />  
 
 table6: rwd table with sticky title [線上範例](https://kristxeng.github.io/table-rwd-demo/table6.html)  
-![](https://github.com/kristxeng/table-rwd-demo/blob/master/table-with-sticky-title.gif)
+<img src="https://github.com/kristxeng/table-rwd-demo/blob/master/table-with-sticky-title.gif" width="300px" />
